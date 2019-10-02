@@ -29,6 +29,7 @@ RUN apt-get update \
         apt-transport-https \
         gnupg2 \
         lsb-release \
+        apache2-utils \
     #
     # Install Azure Functions, .NET Core, and Azure CLI
     && echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $(lsb_release -cs) main" > /etc/apt/sources.list.d/azure-cli.list \
